@@ -4,14 +4,43 @@ import { ItemDisplay } from '@/components/ItemDisplay';
 import { SearchBar } from '@/components/SearchBar';
 import { Button, Group, Box } from '@mantine/core';
 
-let isLoggedIn = false;
+let isLoggedIn = true;
+const items = [
+  {
+    image: '',
+    name: 'Eric',
+    price: 20,
+    rating: 5,
+    description: "he's so gosh darn ____",
+    num_of_ratings: 1,
+    restaurant: "Eric's Big Sausage Palladium",
+  },
+  {
+    image: '',
+    name: 'JP',
+    price: 5,
+    rating: 1,
+    description: "he's so gosh darn ____",
+    num_of_ratings: 1,
+    restaurant: "JP's Tiny Sausage Shack",
+  },
+  {
+    image: '',
+    name: 'Goshen',
+    price: 5000,
+    rating: 5,
+    description: "he's so gosh darn ____",
+    num_of_ratings: 1,
+    restaurant: "Sushi Barn",
+  },
+];
 
 export function HomePage() {
   if (isLoggedIn) {
     return (
       <>
         <SearchBar />
-        <ItemDisplay />
+        <ItemDisplay items={items} />
       </>
     );
   }
