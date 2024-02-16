@@ -16,7 +16,7 @@ export function ItemDisplay(props: any) {
               key={item.item_id}
               name={item.name}
               price={item.price}
-              rating={item.avg_rating}
+              rating={item.rating}
               num_of_ratings={item.num_of_ratings}
               description={item.description}
               restaurant={item.restaurant}

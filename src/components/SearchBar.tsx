@@ -6,10 +6,12 @@ export function SearchBar(props: any) {
   const { input, handleChangeInput, search } = props;
   return (
     <Group gap="xs">
-      <TextInput classNames={{input: classes.blahfornow}} variant="default" size="md" radius="md" placeholder="restaurants, dishes, ingredients"/>
+      <TextInput  variant="default" size="md" radius="md" placeholder="restaurants, dishes, ingredients"/>
       <Button variant="filled" size="md" radius="md">
         {<IconSearch size={14} />}
       </Button>
     </Group>
   );
 };
+
+// classNames={{input: classes.blahfornow}}

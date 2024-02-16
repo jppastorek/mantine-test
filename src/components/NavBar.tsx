@@ -1,5 +1,5 @@
 import { Badge, NavLink } from '@mantine/core';
-import { IconHome2, IconStars, IconLogout, IconChevronRight, IconUser, IconChefHat, IconUserEdit, IconStar } from '@tabler/icons-react';
+import { IconHome2, IconToolsKitchen2, IconLogout, IconChevronRight, IconUser, IconSettings, IconHeart } from '@tabler/icons-react';
 
 export function NavBar() {
   return (
@@ -8,12 +8,12 @@ export function NavBar() {
       <NavLink
         href="/restaurants"
         label="Restaurants"
-        leftSection={<IconChefHat size="1rem" stroke={1.5} />}
+        leftSection={<IconToolsKitchen2 size="1rem" stroke={1.5} />}
       />
       <NavLink
         href="/favorites"
         label="My Favorites"
-        leftSection={<IconStar size="1rem" stroke={1.5} />}
+        leftSection={<IconHeart size="1rem" stroke={1.5} />}
       />
       <NavLink
         href="/account"
@@ -24,7 +24,7 @@ export function NavBar() {
         }
         childrenOffset={28}
       >
-        <NavLink label="Settings" href="#required-for-focus" leftSection={<IconUserEdit size="1rem" stroke={1.5} />} />
+        <NavLink label="Settings" href="#required-for-focus" leftSection={<IconSettings size="1rem" stroke={1.5} />} />
         <NavLink label="Sign Out" href="#required-for-focus" leftSection={<IconLogout size="1rem" stroke={1.5} />} />
       </NavLink>
     </>

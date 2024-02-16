@@ -28,12 +28,10 @@ export default function Shell() {
       </AppShell.Header>
 
       <AppShell.Navbar p="md">
-        Nav
         <NavBar />
       </AppShell.Navbar>
 
       <AppShell.Main>
-        Main
         <Outlet />
       </AppShell.Main>
     </AppShell>

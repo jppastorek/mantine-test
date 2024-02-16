@@ -12,7 +12,7 @@ const items = [
     price: 20,
     rating: 5,
     description: "he's so gosh darn ____",
-    num_of_ratings: 1,
+    num_of_ratings: 243,
     restaurant: "Eric's Big Sausage Palladium",
   },
   {
@@ -21,7 +21,7 @@ const items = [
     price: 5,
     rating: 1,
     description: "he's so gosh darn ____",
-    num_of_ratings: 1,
+    num_of_ratings: 107,
     restaurant: "JP's Tiny Sausage Shack",
   },
   {
@@ -30,7 +30,7 @@ const items = [
     price: 5000,
     rating: 5,
     description: "he's so gosh darn ____",
-    num_of_ratings: 1,
+    num_of_ratings: 196,
     restaurant: "Sushi Barn",
   },
 ];
