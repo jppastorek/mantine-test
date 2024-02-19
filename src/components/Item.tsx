@@ -1,12 +1,5 @@
-import { Card, Image, Text, Badge, Button, Group, Anchor } from '@mantine/core';
-import {
-  IconArrowRight,
-  IconGripHorizontal,
-  IconHeart,
-  IconHeartFilled,
-  IconToolsKitchen2,
-} from '@tabler/icons-react';
-import { Rating } from '@mantine/core';
+import { Card, Image, Text, Badge, Button, Group, Anchor, Rating } from '@mantine/core';
+import { IconArrowRight, IconHeart, IconHeartFilled } from '@tabler/icons-react';
 
 export function Item(props: any) {
   const { image, name, price, rating, description, num_of_ratings, restaurant } = props;
@@ -17,14 +10,13 @@ export function Item(props: any) {
       </Card.Section>
 
       <Group justify="space-between" mt="md" mb="xs">
-        <Text fw={500} size="lg">
+        <Text fw={500} size="sm">
           <Group gap={10}>
             {name}{' '}
             <Rating
-              emptySymbol={<IconHeart size="1rem" />}
-              fullSymbol={<IconHeartFilled size="1rem" />}
+              emptySymbol={<IconHeart size="1rem" color="red" />}
+              fullSymbol={<IconHeartFilled size="1rem" color="red" />}
               value={0}
-              color="pink"
               count={1}
             />
           </Group>
@@ -35,7 +27,7 @@ export function Item(props: any) {
             </Anchor>
           </Group>
         </Text>
-        <Badge color="pink" size="lg" radius="lg">
+        <Badge color="red" size="lg" radius="lg">
           ${price}
         </Badge>
       </Group>
@@ -46,7 +38,7 @@ export function Item(props: any) {
 
       <Button
         variant="gradient"
-        gradient={{ from: 'pink', to: 'orange', deg: 135 }}
+        gradient={{ from: 'red', to: 'orange', deg: 135 }}
         fullWidth
         mt="md"
         radius="sm"

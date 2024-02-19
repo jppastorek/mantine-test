@@ -1,10 +1,7 @@
-import { AppShell, Burger, Button, Group } from '@mantine/core';
+import { AppShell, Burger, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import { Outlet } from 'react-router-dom';
 import { NavBar } from './NavBar';
-import { Title, Text } from '@mantine/core';
-import { ColorSchemeToggle } from './ColorSchemeToggle/ColorSchemeToggle';
-// import { } from '@tabler/icons-react';
 
 export default function Shell() {
   const [opened, { toggle }] = useDisclosure();
@@ -22,7 +19,7 @@ export default function Shell() {
       <AppShell.Header>
         <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
 
-        <Text size='xl' fw={900} variant="gradient" gradient={{ from: 'pink', to: 'yellow' }}>
+        <Text size="xl" fw={900} variant="gradient" gradient={{ from: 'red', to: 'yellow' }}>
           Menu Ratings
         </Text>
       </AppShell.Header>

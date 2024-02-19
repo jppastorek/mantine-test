@@ -1,4 +1,4 @@
-import { TextInput, Checkbox, Button, Group, Box } from '@mantine/core';
+import { TextInput, Button, Group, Box } from '@mantine/core';
 import { useForm } from '@mantine/form';
 
 export function LoginForm() {
@@ -17,13 +17,15 @@ export function LoginForm() {
     <Box maw={340} mx="auto">
       <form onSubmit={form.onSubmit((values) => console.log(values))}>
         <TextInput placeholder="Email" {...form.getInputProps('email')} />
-        <TextInput
-          placeholder="Password"
-          {...form.getInputProps('password')}
-        />
+        <TextInput placeholder="Password" {...form.getInputProps('password')} />
 
         <Group justify="flex-end" mt="md">
-          <Button fullWidth type="submit" variant="gradient" gradient={{ from: 'pink', to: 'yellow' }}>
+          <Button
+            fullWidth
+            type="submit"
+            variant="gradient"
+            gradient={{ from: 'pink', to: 'yellow' }}
+          >
             Log In
           </Button>
         </Group>
