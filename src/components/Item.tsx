@@ -5,9 +5,9 @@ export function Item(props: any) {
   const { image, name, price, rating, description, num_of_ratings, restaurant } = props;
   return (
     <Card shadow="sm" padding="lg" radius="md" withBorder>
-      <Card.Section>
+      {/* <Card.Section>
         <Image src={image} height={160} alt={name} />
-      </Card.Section>
+      </Card.Section> */}
 
       <Group justify="space-between" mt="md" mb="xs">
         <Text fw={500} size="sm">

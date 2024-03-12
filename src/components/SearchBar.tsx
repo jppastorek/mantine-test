@@ -7,7 +7,7 @@ export function SearchBar(props: any) {
   return (
     <Group gap="xs">
       <TextInput  variant="default" size="md" radius="md" placeholder="restaurants, dishes, ingredients"/>
-      <Button variant="filled" size="md" radius="md">
+      <Button variant="gradient" size="md" radius="md" gradient={{ from: 'red', to: 'orange', deg: 135 }}>
         {<IconSearch size={14} />}
       </Button>
     </Group>
